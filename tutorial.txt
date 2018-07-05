@@ -1,0 +1,56 @@
+- @2KNIGHT@: The knight moves in 'L' shape (marked fields on picture above). 
+~
+- @2BISHOP@: can move any number of squares diagonally,but cannot leap over pieces. 
+~
+- @1AI_PAWN@ (@3p@): The pawn can move forward to the unoccupied 
+square immediately in front of it on the same file, or on its first move 
+it can advance two squares along the same file, provided both squares are 
+unoccupied; or the pawn can capture an opponent's piece on a square 
+diagonally in front of it on an adjacent file, by moving to that square. 
+The AI_PAWN will prioritize eating enemy piece over going forward. 
+(@1AI_PAWN@ is worth@6 6 @points)
+
+~
+
+- @1AI_BISHOP@ (@6b@): -rules of regular bishop but will only move in 
+following manner. BISHOP AI always @3"wakes up on the left foot"@ 
+meaning that he will prioritize moving as far to the bottom-left 
+as he can above all. Only if he is unable to move to the left anymore 
+will he swap directions.
+@3AI_BISHOP will only eat enemy piece if it is caught in this LEFT-RIGHT 
+pattern!@  
+(@1AI_BISHOP@ is worth@6 12 @points)
+
+~
+SPECIAL PIECES:
+- @2SUICIDE ROOK@ (@7R@): Is a special piece that lasts for @7ONE MOVE ONLY.@ 
+He first waits for player /other pieces to make a move, and then
+sprints forward [i+k][j] until he hits ANYTHING 
+(either end of the board, enemy or the player). 
+@1Once he collides with an object he will then explode, killing both 
+himself and that object (either player or enemy).@ 
+User can buy this piece in the shop as many times as he likes as 
+long as he has points for it, and he can place as many as the suicide 
+rooks he likes. If there are multiply suicide rooks on the board the 
+priority will have those in front.
+ 
+- @2HAPPY KING@ (@7K@): Is a special piece that lasts until destroyed. 
+@3Happy King is so happy that he won't hurth a fly, meaning that 
+he cannot kill other enemy pieces.@ He shares his love of life 
+with player, and @3generates 1 point each turn.@ 
+Happy king can't be moved. 
+User can buy this piece from the shop, and it is generated on random 
+positions anywhere from 1st row to 5th, on any column.
+~
+/@7random@ - only at init_setup (beginning stage). 
+	Generates 3 knights and 2 bishops on random positions.
+/@1exit@, /@1end@  - exits the program.
+/@7undo@  - undoes previous move. Can be used from start to finish of 
+	the CURRENT wave. @1Once the wave completes undo history is deleted!@  
+/@3help@ - prints Chesspernado Manual whenever you want during the game.
+/@7skip@ - skips 1 move during wave. 
+/@7revive@ - you can sacrifice@6 60@ points to revive dead piece 
+	(you can set him anywhere from 1 to 5th row)
+/@7buy@ - summons @SHOP@ window, from which you can buy certain pieces and 
+	features for @6X@ points.
+~

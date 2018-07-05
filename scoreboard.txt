@@ -1,0 +1,6 @@
+name: danilo
+ | points: 210 | wave: 7
+name: choda
+ | points: 778 | wave: 24
+name: danilo2
+ | points: 24 | wave: 6
