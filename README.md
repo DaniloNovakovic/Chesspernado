@@ -1,5 +1,5 @@
-> Chessparnado v1.16 - Author: Danilo Novakovic
-
+# Chessparnado 
+> v1.16 - Author: Danilo Novakovic
 ## General Information
 Chesspernado is an original game made by Danilo Novakovic inspired by chess, tetris and plants vs zombie idea.
 The game is Player vs AI, played on a 12x8 board. Players goal is to protect the first row as long as possible
