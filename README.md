@@ -1,5 +1,7 @@
 # Chessparnado 
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 **Chesspernado** is an original game made by Danilo Novakovic inspired by Chess, Tetris and Plants vs Zombies.
 The game is Player vs AI, played on a 12x8 board. Players goal is to protect the first row as long as possible
 from the attacking enemy pieces. Player starts with 3 knights and 2 bishops, and is able to upgrade and buy
