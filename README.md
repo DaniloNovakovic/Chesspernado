@@ -84,6 +84,8 @@ Use these steps to compile and start console application.
 
 `/revive` - you can sacrifice *60* points to revive dead piece (you can set him anywhere from 1st to 5th row)
 
+![Revive Demo](docs/revive.gif)
+
 `/buy` - summons *STORE* window, from which you can buy certain pieces and features for *X* points.
 
 ![Shop](docs/store.PNG)
