@@ -11,6 +11,8 @@ more from the shop as the game progresses.
 > More on rules of the chessperando, figure movement, and notation in the program can be found in Documentation.pdf
 aswell as, in any time, inside of programm by typing command `/help` or by selection option 2. from the main menu.
 
+---
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -22,6 +24,8 @@ aswell as, in any time, inside of programm by typing command `/help` or by selec
 - [Personal Logs](#personal-logs)
 - [Support](#support)
 - [License](#license)
+
+---
 
 ## Getting started
 
@@ -50,15 +54,23 @@ Use these steps to compile and start console application.
 
 > In case you run into problems related to missing packages try using `sudo apt-get install build-essential` command (it should install `gcc` and `make` alongside [other usefull tools](https://packages.ubuntu.com/xenial/build-essential))
 
+---
+
 ## Game rules
 
 ### Supported commands
 
 `/back` - goes back to the main menu.
 
+![Back Demo](docs/back.gif)
+
 `/hint` - prints available places where a certain piece can move. Or prints out info for Happy King, Suicide Rook or empty piece.
 
+![Hint Demo](docs/hint.gif)
+
 `/random` - only at init_setup (beginning stage). Generates 3 knights and 2 bishops on random positions.
+
+![Random Demo](docs/random.gif)
 
 `/exit`, `/end` - exits the program.
 
@@ -66,19 +78,23 @@ Use these steps to compile and start console application.
 
 `/help` - prints Chesspernado Manual whenever you want during the game.
 
+![Help Demo](docs/help.gif)
+
 `/skip` - skips 1 move during wave.
 
 `/revive` - you can sacrifice *60* points to revive dead piece (you can set him anywhere from 1st to 5th row)
 
-`/buy` - summons *SHOP* window, from which you can buy certain pieces and features for *X* points.
+`/buy` - summons *STORE* window, from which you can buy certain pieces and features for *X* points.
+
+![Shop](docs/store.PNG)
+
+### Pieces and Movement
 
 Notation of the moves is as follows:
 **Piece**/*column*/*row*/column/row
 (**what piece do you want to move**, *from where*, to where)
 
 Examples: **B***f4*d6, **N***b8*c6
-
-### Pieces and Movement
 
 #### SUICIDE ROOK (R)
 
@@ -120,6 +136,8 @@ The knight is the only piece that can leap over other pieces.
 The pawn can move forward to the unoccupied square immediately in front of it on the same file, or on its first move it can advance two squares along the same file, provided both squares are unoccupied; or the pawn can capture an opponent's piece on a square diagonally in front of it on an adjacent file, by moving to that square. The *AI_PAWN* will prioritize eating enemy piece over going forward.
 
 > AI_PAWN is worth 6 points
+
+---
 
 ## Personal logs
 
