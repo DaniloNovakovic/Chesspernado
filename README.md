@@ -45,6 +45,8 @@ Use these steps to compile and start console application.
 - Enter `make` (*Compiles the program*)
 - Start program by running `./chesspernado`
 
+> In case you run into problems related to missing packages try using `sudo apt-get install build-essential` command (it should install `gcc` and `make` alongside [other usefull tools](https://packages.ubuntu.com/xenial/build-essential))
+
 ## Personal logs
 
 ### 9/May/2019
