@@ -16,6 +16,9 @@ aswell as, in any time, inside of programm by typing command `/help` or by selec
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+- [Game rules](#game-rules)
+  - [Supported Commands](#supported-commands)
+  - [Pieces and movement](#pieces-and-movement)
 - [Personal Logs](#personal-logs)
 - [Support](#support)
 - [License](#license)
@@ -47,6 +50,78 @@ Use these steps to compile and start console application.
 
 > In case you run into problems related to missing packages try using `sudo apt-get install build-essential` command (it should install `gcc` and `make` alongside [other usefull tools](https://packages.ubuntu.com/xenial/build-essential))
 
+## Game rules
+
+### Supported commands
+
+`/back` - goes back to the main menu.
+
+`/hint` - prints available places where a certain piece can move. Or prints out info for Happy King, Suicide Rook or empty piece.
+
+`/random` - only at init_setup (beginning stage). Generates 3 knights and 2 bishops on random positions.
+
+`/exit`, `/end` - exits the program.
+
+`/undo` - undoes previous move. Can be used from start to finish of the **CURRENT** wave. **Once the wave completes undo history is deleted!**
+
+`/help` - prints Chesspernado Manual whenever you want during the game.
+
+`/skip` - skips 1 move during wave.
+
+`/revive` - you can sacrifice *60* points to revive dead piece (you can set him anywhere from 1st to 5th row)
+
+`/buy` - summons *SHOP* window, from which you can buy certain pieces and features for *X* points.
+
+Notation of the moves is as follows:
+**Piece**/*column/row*/`column/row`
+(**what piece do you want to move**, *from where*, `to where`)
+
+Examples: **B***f4*`d6`, **N***b8*`c6`
+
+### Pieces and Movement
+
+#### SUICIDE ROOK (R)
+
+Is a special piece that lasts for **ONE MOVE ONLY**. He first waits for player /other pieces to make a move, and
+then sprints forward [i+k][j] until he hits ANYTHING (either end of the board, enemy or the player). Once he collides with an object he will then explode, killing both himself and that object (either player or enemy). User can buy this piece in the shop as many times as he likes as long as he has points for it, and he can place as many as the suicide rooks he likes. If there are multiply suicide rooks on the boardthe priority will have those in front.
+
+#### HAPPY KING (K)
+
+Is a special piece that lasts until destroyed.
+Happy King is so happy that he won't hurth a fly, meaning that he cannot kill other enemy pieces. He shares his love of life with player, and generates 1 point each turn.
+Happy king can't be moved. User can buy this piece from the shop, and it is generated on random positions anywhere from 1st row to 5th, on any column.
+
+#### BISHOP (B)
+
+Can move any number of squares diagonally, but cannot leap over other pieces.
+
+![Bishop](docs/tutorial-bishop.PNG)
+
+#### AI_BISHOP (b)
+
+Has rules of regular bishop but will only move in
+following manner. BISHOP AI always "wakes up on the left foot"
+meaning that he will prioritize moving as far to the bottom-left as he
+can above all. Only if he is unable to move to the left anymore
+will he swap directions meaning he will move as far to the bottomright
+as he can. AI_BISHOP will only eat enemy piece if it is caught
+in this LEFT-RIGHT pattern. (AI_BISHOP is worth 12 points)
+
+#### KNIGHT (N)
+
+The knight moves to any of the closest squares that
+are not on the same rank, file, or diagonal, thus the move forms an
+"L"-shape:
+two squares vertically and one square horizontally, or two squares horizontally and one square vertically.
+The knight is the only piece that can leap over other pieces.
+
+#### AI_PAWN (p)
+
+The pawn can move forward to the unoccupied square immediately in front of it on the same file, or on its first
+move it can advance two squares along the same file, provided both squares are unoccupied;
+or the pawn can capture an opponent's piece on a square diagonally in front of it on an adjacent file, by moving to that square.
+The AI_PAWN will prioritize eating enemy piece over going forward. (AI_PAWN is worth 6 points)
+
 ## Personal logs
 
 ### 9/May/2019
@@ -67,6 +142,8 @@ Reach out to me at one of the following places!
 
 - Website at <a href="https://danilonovakovic.github.io/index.html" target="_blank">`danilonovakovic.github.io`</a>
 - Linkedin at <a href="https://www.linkedin.com/in/danilo-novakovi%C4%87-821934167/" target="_blank">`DaniloNovakovic`</a>
+
+> Special thanks to alpha-testers: [Vladimir Ivkovic](https://github.com/vladimirivkovic), Vladimir Virijevic, [Vuk Isic](https://github.com/vukisic), Slavko Lukic and Aleksandar Ristic
 
 ---
 
