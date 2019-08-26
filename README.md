@@ -19,6 +19,9 @@ aswell as, in any time, inside of programm by typing command `/help` or by selec
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
 - [Game rules](#game-rules)
+  - [Goal of the game](#goal-of-the-game)
+  - [Phases](#phases)
+  - [Turns](#turns)
   - [Supported Commands](#supported-commands)
   - [Pieces and movement](#pieces-and-movement)
 - [Personal Logs](#personal-logs)
@@ -58,6 +61,41 @@ Use these steps to compile and start console application.
 
 ## Game rules
 
+### Goal of the game
+
+The goal of the game is to stop enemy pawns & bishops from reaching to 1st row of the board.
+
+- If board is *FULL* on AI's turn, then the game will end.
+- If player lost *ALL OF HIS PIECES* then the game will end.
+
+At the end of the game player will be prompted to enter the name, after which the result will be printed out in the *scoreboard.txt*
+
+> Score won't be recorded if the program has been closed with /exit command
+
+### Phases
+
+#### Initial setup
+
+At the beginning of the game player decides places 3 knights and 2 bishops on any column from 1st to 5th row of the board. During this phase player can use :
+
+- `/end, /exit` - exit the game
+- `/re` - resets the initialization setup
+- `/random` - generates bishops and knights on random positions.
+
+Upon completion player will be prompted to confirm the setup.
+
+![Random Demo](docs/random.gif)
+
+#### Waves
+
+After [initial setup](#initial-setup), the game begins, and first randomly generated wave starts. Each wave gets harder and harder as the game goes on.
+
+### Turns
+
+`PLAYER` - is able to move 1 piece during his turn (with exeption of shop).
+
+`ENEMY_AI` - During 1 turn EVERY piece with legal moves will be moved. If NO PIECE has ANY LEGAL MOVE then *N* new pawns will be randomly generated anywhere from 7 to 12th row.
+
 ### Supported commands
 
 `/back` - goes back to the main menu.
@@ -69,8 +107,6 @@ Use these steps to compile and start console application.
 ![Hint Demo](docs/hint.gif)
 
 `/random` - only at init_setup (beginning stage). Generates 3 knights and 2 bishops on random positions.
-
-![Random Demo](docs/random.gif)
 
 `/exit`, `/end` - exits the program.
 
