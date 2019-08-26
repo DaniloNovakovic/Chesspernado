@@ -103,6 +103,8 @@ Examples: **B***f4*d6, **N***b8*c6
 Is a special piece that lasts for **ONE MOVE ONLY**. He first waits for player /other pieces to make a move, and
 then sprints forward [i+k][j] until he hits ANYTHING (either end of the board, enemy or the player). Once he collides with an object he will then explode, killing both himself and that object (either player or enemy). User can buy this piece in the shop as many times as he likes as long as he has points for it, and he can place as many as the suicide rooks he likes. If there are multiply suicide rooks on the boardthe priority will have those in front.
 
+![Suicide Rook Demo](docs/suicide-rook.gif)
+
 #### HAPPY KING (K)
 
 Is a special piece that lasts until destroyed.Happy King is so happy that he won't hurth a fly, meaning that **he cannot kill other enemy pieces**. He shares his love of life with player, and **generates 1 point each turn**.
