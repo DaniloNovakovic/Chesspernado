@@ -162,9 +162,9 @@ will he swap directions meaning he will move as far to the bottomright
 as he can. AI_BISHOP will only eat enemy piece if it is caught
 in this LEFT-RIGHT pattern.
 
-> AI_BISHOP is worth 12 points
-
 ![AI Bishop Demo](docs/ai-bishop.gif)
+
+> AI_BISHOP is worth 12 points
 
 #### KNIGHT (N)
 
@@ -177,9 +177,9 @@ The knight is the only piece that can leap over other pieces.
 
 The pawn can move forward to the unoccupied square immediately in front of it on the same file, or on its first move it can advance two squares along the same file, provided both squares are unoccupied; or the pawn can capture an opponent's piece on a square diagonally in front of it on an adjacent file, by moving to that square. The *AI_PAWN* will prioritize eating enemy piece over going forward.
 
-> AI_PAWN is worth 6 points
-
 ![AI Pawn Demo](docs/ai-pawn.gif)
+
+> AI_PAWN is worth 6 points
 
 ---
 
