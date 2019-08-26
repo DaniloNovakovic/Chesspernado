@@ -76,7 +76,7 @@ At the end of the game player will be prompted to enter the name, after which th
 
 #### Initial setup
 
-At the beginning of the game, the player decides places 3 knights and 2 bishops on any column from 1st to 5th row of the board. During this phase player can use :
+At the beginning of the game, the player decides initial locations for 3 knights and 2 bishops. He can place them on any column from 1st to 5th row of the board. During this phase player can use :
 
 - `/end, /exit` - exit the game
 - `/re` - resets the initialization setup
@@ -92,37 +92,37 @@ After [initial setup](#initial-setup), the game begins, and the first randomly g
 
 ### Turns
 
-`PLAYER` - can move 1 piece during his turn (with exception of the shop).
+`PLAYER` - Can move 1 piece during his turn (with exception of the shop).
 
 `ENEMY_AI` - During 1 turn EVERY piece with legal moves will be moved. If NO PIECE has ANY LEGAL MOVE then *N* new pawns will be randomly generated anywhere from 7 to 12th row.
 
 ### Supported commands
 
-`/back` - goes back to the main menu.
+`/back` - Goes back to the main menu.
 
 ![Back Demo](docs/back.gif)
 
-`/hint` - prints available places where a certain piece can move. Or prints out info for Happy King, Suicide Rook or empty piece.
+`/hint` - Prints available places where a certain piece can move. Or prints out info for Happy King, Suicide Rook or empty piece.
 
 ![Hint Demo](docs/hint.gif)
 
-`/random` - only at init_setup (beginning stage). Generates 3 knights and 2 bishops on random positions.
+`/random` - Only at init_setup (beginning stage). Generates 3 knights and 2 bishops on random positions.
 
-`/exit`, `/end` - exits the program.
+`/exit`, `/end` - Exits the program.
 
-`/undo` - undoes the previous move. It can be used from start to finish of the **CURRENT** wave. **Once the wave completes "undo history" is deleted!**
+`/undo` - Undoes the previous move. It can be used from start to finish of the **CURRENT** wave. **Once the wave completes "undo history" is deleted!**
 
-`/help` - prints Chesspernado Manual whenever you want during the game.
+`/help` - Prints Chesspernado Manual whenever you want during the game.
 
 ![Help Demo](docs/help.gif)
 
-`/skip` - skips 1 move during the wave.
+`/skip` - Skips 1 move during the wave.
 
-`/revive` - you can sacrifice *60* points to revive dead piece (you can set him anywhere from 1st to 5th row)
+`/revive` - You can sacrifice *60* points to revive dead piece (you can set him anywhere from 1st to 5th row)
 
 ![Revive Demo](docs/revive.gif)
 
-`/buy` - summons *STORE* window, from which you can buy certain pieces and features for *X* points.
+`/buy` - Summons *STORE* window, from which you can buy certain pieces and features for *X* points.
 
 ![Shop](docs/store.PNG)
 
