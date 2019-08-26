@@ -92,37 +92,37 @@ After [initial setup](#initial-setup), the game begins, and the first randomly g
 
 ### Turns
 
-`PLAYER` - Can move 1 piece during his turn (with exception of the shop).
+`PLAYER` - can move 1 piece during his turn (with exception of the shop).
 
-`ENEMY_AI` - During 1 turn EVERY piece with legal moves will be moved. If NO PIECE has ANY LEGAL MOVE then *N* new pawns will be randomly generated anywhere from 7 to 12th row.
+`ENEMY_AI` - during 1 turn **every** piece with legal moves will be moved. If **no piece has any legal move** then *N* new pawns will be randomly generated anywhere from 7 to 12th row.
 
 ### Supported commands
 
-`/back` - Goes back to the main menu.
+`/back` - goes back to the main menu.
 
 ![Back Demo](docs/back.gif)
 
-`/hint` - Prints available places where a certain piece can move. Or prints out info for Happy King, Suicide Rook or empty piece.
+`/hint` - shows either available places where a certain piece can move or additional information depending on what has been selected.
 
 ![Hint Demo](docs/hint.gif)
 
-`/random` - Only at init_setup (beginning stage). Generates 3 knights and 2 bishops on random positions.
+`/exit`, `/end` - exits the program.
 
-`/exit`, `/end` - Exits the program.
+`/undo` - undo the previous move. 
 
-`/undo` - Undoes the previous move. It can be used from start to finish of the **CURRENT** wave. **Once the wave completes "undo history" is deleted!**
+> It can be used from start to finish of the **CURRENT** wave. **Once the wave completes "undo history" is deleted!**
 
-`/help` - Prints Chesspernado Manual whenever you want during the game.
+`/help` - prints Chesspernado manual whenever you want during the game.
 
 ![Help Demo](docs/help.gif)
 
-`/skip` - Skips 1 move during the wave.
+`/skip` - skips 1 move during the wave.
 
-`/revive` - You can sacrifice *60* points to revive dead piece (you can set him anywhere from 1st to 5th row)
+`/revive` - you can sacrifice *60* points to revive dead piece (you can set him anywhere from 1st to 5th row)
 
 ![Revive Demo](docs/revive.gif)
 
-`/buy` - Summons *STORE* window, from which you can buy certain pieces and features for *X* points.
+`/buy` - summons *STORE* window, from which you can buy certain pieces and features for *X* points.
 
 ![Shop](docs/store.PNG)
 
